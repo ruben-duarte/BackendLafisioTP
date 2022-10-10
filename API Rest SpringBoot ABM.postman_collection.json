@@ -1,0 +1,696 @@
+{
+	"info": {
+		"_postman_id": "737bd210-8c62-4b86-afae-49cbee7d81f2",
+		"name": "API Rest SpringBoot ABM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4246031"
+	},
+	"item": [
+		{
+			"name": "Request Departamentos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/administradores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"administradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Administrador por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/administradores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"administradores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Administrador Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Ivonne\",\r\n    \"apellido\": \"Herrera\",\r\n    \"contrasenia\": \"Ivonneherrera1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/administradores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"administradores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Administrador Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": 51489764,\r\n    \"nombre\": \"Ivonne\",\r\n    \"apellido\": \"Herrera\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/administradores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"administradores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Administrador Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/administradores/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"administradores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Usuarios",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Usuario por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Usuario Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": \"14151836\",\r\n    \"nombre\": \"Fionna\",\r\n    \"apellido\": \"De Shrek\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Usuario Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": \"14151836\",\r\n    \"nombre\": \"Princess Fionna\",\r\n    \"apellido\": \"De Shrek\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Usuario Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Calendario",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calendarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calendarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Calendario por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/calendarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calendarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Calendario Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dia\": \"2022-10-09\",\r\n    \"horaInicio\": \"2022-10-09T10:07:00\",\r\n    \"horaFin\": \"2022-10-09T10:07:30\",\r\n    \"estado\": 1,\r\n    \"administrador\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calendarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calendarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Calendario Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dia\": \"2022-10-09\",\r\n    \"horaInicio\": \"2022-10-09T10:07:00\",\r\n    \"horaFin\": \"2022-10-09T10:07:30\",\r\n    \"estado\": 0,\r\n    \"administrador\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calendarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calendarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Calendario Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Cita",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/citas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"citas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Cita por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/citas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"citas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Cita Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"rehabilitación integral\",\r\n    \"confirmacion\": \"confirmado\",\r\n    \"recordarCita\": \"recordar\",\r\n    \"control\": \"si\",\r\n    \"administrador\": { \"id\" : 1 },\r\n    \"usuario\": { \"id\" : 1 },\r\n    \"calendario\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/citas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"citas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Cita Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"acupuntura\",\r\n    \"confirmacion\": \"confirmado\",\r\n    \"recordarCita\": \"recordar\",\r\n    \"control\": \"si\",\r\n    \"administrador\": { \"id\" : 1 },\r\n    \"usuario\": { \"id\" : 1 },\r\n    \"calendario\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/citas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"citas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Cita Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/citas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"citas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Historia Clinica",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/historiaclinica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"historiaclinica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Historia Clinica por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/historiaclinica/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"historiaclinica",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Historia Clinica Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"antecedentes\": \"rehabilitación integral\",\r\n    \"alergias\": \"ninguna\",\r\n    \"vacunas\": \"fiebre amarilla\",\r\n    \"intervencionesQuirurgicas\": 0,\r\n    \"peso\": 101,\r\n    \"altura\": 176,\r\n    \"enfermedades\": \"hipertension\",\r\n    \"motivoConsulta\": \"dolor agudo en la espalda\",\r\n    \"observaciones\": \"se realiza la primera sesión de rehabilitación\",\r\n    \"administrador\": { \"id\" : 1 },\r\n    \"usuario\": { \"id\" : 1 },\r\n    \"cita\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/historiaclinica",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"historiaclinica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Historia Clinica Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"antecedentes\": \"rehabilitación integral\",\r\n    \"alergias\": \"ninguna\",\r\n    \"vacunas\": \"fiebre amarilla, covid19, rotavirus\",\r\n    \"intervencionesQuirurgicas\": 0,\r\n    \"peso\": 101,\r\n    \"altura\": 176,\r\n    \"enfermedades\": \"hipertension\",\r\n    \"motivoConsulta\": \"dolor agudo en la espalda\",\r\n    \"observaciones\": \"se realiza la primera sesión de rehabilitación\",\r\n    \"administrador\": { \"id\" : 1 },\r\n    \"usuario\": { \"id\" : 1 },\r\n    \"cita\": { \"id\" : 1 }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/historiaclinica/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"historiaclinica",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request Historia Clinica Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/historiaclinica/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"historiaclinica",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiMTAyOTM4NDg0OCIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NjQ5MTMwNDUsImV4cCI6MTY2NDkxMzY0NX0"
+		}
+	]
+}
